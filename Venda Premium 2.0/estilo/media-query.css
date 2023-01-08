@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 401px) and (max-width: 744px){
+    header{
+        padding: 30px;
+    }
+    header > h1{
+        font-size: 3.5em;
+    }
+    button.pln{
+        margin-left: 36px;
+    }
+
+    div#send > input#iemail {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 744px){
+    header > h1{
+        font-size: 4em;
+    }
+    button.pln{
+        margin-left: 58px;
+    }
+    div#send > input#iemail {
+        width: 300px;
+    }
+
+}

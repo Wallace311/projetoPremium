@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+/*Paleta de Cores*/
+
+:root{
+    --Amarelo: #F0E916;
+    --VerdePalido: #B6FA83;
+    --Verde: #2BE04F;
+    --Ciano: #5FFAD3;
+    --AzulCiano: #21B4ED;
+}
+*{  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html{
+    background: linear-gradient(to right, var(--Amarelo), var(--Verde), var(--AzulCiano));
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+header > h1{
+    padding: 15px;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: -1px 1px 8px rgb(0, 0, 0, 0.350);
+}
+
+
+/*Configurações do Main*/
+main{
+    width: 90vw;
+    margin: 10px auto 20px auto;
+}
+main > section#premium{
+    background-color: white;
+
+    margin: auto;
+    padding: 12px;
+    width: 80%;
+
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.596);
+}
+
+section#premium > h2{
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 14px;
+    font-size: 1.7em;
+}
+
+section#premium > p#bene{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+ul{
+    list-style-type: none;
+    columns: 2;
+}
+
+ul > li{
+    background-color: var(--Ciano);
+    margin: 0px 0px 5px 15px;
+    padding: 4px;
+    width: 80%;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+section#premium > div.planos{
+    background: linear-gradient(to right, var(--Amarelo), var(--VerdePalido));
+    width: 90%;
+    margin: 20px auto auto auto;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+}
+section#premium > div.planos > h3{
+    font-size: 3.5em;
+}
+div.planos > p{
+    background-color: white;
+    text-align: right;
+    width: 100px;
+    margin: 30px auto;
+    padding: 8px 0px;
+    border-radius: 6px; 
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+div.planos  > p:hover{
+    background-color: var(--AzulCiano);
+    width: 130px;
+    padding: 13px 5px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
+    font-weight: bold;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+div.planos > p > span{
+    position: absolute;
+    top: 5px;
+    left: -8px;
+}
+abbr{
+    text-decoration: none;
+}
+p.botao{
+    width: 100%;
+    height: 30px;
+    display: inline;
+}
+button.pln{
+    width: 80px;
+    height: 30px;
+    margin:10px auto 10px 22px;
+    width: 40%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-shadow: 0px  0px 4px gray;
+    background-color: var(--VerdePalido);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+button.pln:hover{
+    background-color: var(--Amarelo);
+}
+
+#plano2{
+    display: none;
+}
+#plano3{
+    display: none;
+}
+
+
+form#form1{display: none;}
+form#form2{display: none;}
+form#form3{display: none;}
+form > div#send{
+    background: linear-gradient(to right, var(--VerdePalido), var(--Amarelo));
+    margin: 11px auto;
+    padding: 6px;
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+div#send > input#iemail{
+    height: 25px;
+    border-radius: 3px;
+    width: 120px;
+}
+div#send > label#lblemail{
+    font-size: 14pt;
+}
+div#send > input#enviar{
+    font-weight: bold;
+}
+
+
+/*Configurações do Foote*/
+footer{
+    background-color: rgba(0, 0, 0, 0.692);
+    color: white;
+    width: 75vw;
+    margin: auto;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px black;
+}
+footer > h5{
+    text-align: center;
+    font: italic bold 1.2em Arial;
+
+}
+footer > p{
+    text-align: center;
+    font-style: italic;
+}
+footer p a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+footer > p > a:hover{    
+    text-decoration: underline;
+}
